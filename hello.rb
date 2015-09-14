@@ -1,7 +1,8 @@
 require 'sinatra'
 
 get '/' do
-	'hello!'
+	@name = ["Chairman Meow", "Adolf Kitler", "Bob"].sample
+	erb :index
 end
 
 get '/secret' do
